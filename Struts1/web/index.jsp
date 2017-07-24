@@ -9,7 +9,7 @@
 </head>
 <body>
 <html:link forward="search">Search</html:link> OR <a href='<html:rewrite page="/search.jsp" />'>Search</a><br>
-<html:link action="/helloWorld">Hello World</html:link>
+<html:link action="/helloWorld">Hello World...</html:link>
 
 </body>
 </html>
