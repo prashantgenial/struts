@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Hello</title>
+<title>::Struts1::</title>
 </head>
 <body>
 <html:link forward="search">Search</html:link> OR <a href='<html:rewrite page="/search.jsp" />'>Search</a><br>
