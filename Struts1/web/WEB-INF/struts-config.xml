@@ -22,4 +22,6 @@
 		</action>
 	</action-mappings>
 
+	<!-- Message Resources Configuration -->
+	<message-resources parameter="com.mykong.common.common"/>
 </struts-config>
