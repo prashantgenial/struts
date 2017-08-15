@@ -12,16 +12,22 @@
 	<!-- Global Forwards Configuration -->
 	<global-forwards>
 		<forward name="search" path="/search.jsp" />
+		<forward name="main" path="/index.jsp" />		
 	</global-forwards>
 	
 	<action-mappings>
-		<action path="/helloWorld" type="com.mkyong.common.action.HelloWorldAction"
-			name="helloWorldForm" scope="request" >
-			<forward name="success" path="/HelloWorld.jsp" />
-
+		<action path="/helloWorld"
+				 type="com.mkyong.common.action.HelloWorldAction"
+				name="helloWorldForm"
+				scope="request" 
+				input="/HelloWorld.jsp"
+				validate="true"
+				cancellable="true"
+				>
+			<forward name="success" path="/success.jsp" />
 		</action>
+		<action path="/mysearch" parameter="/search.jsp" type="org.apache.struts.actions.ForwardAction" />
 	</action-mappings>
 
-	<!-- Message Resources Configuration -->
-	<message-resources parameter="com.mykong.common.common"/>
+	<message-resources parameter="application" />
 </struts-config>
