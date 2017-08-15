@@ -5,11 +5,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Struts1</title>
+<title>Hello</title>
 </head>
 <body>
-<html:link forward="search">Search</html:link> OR <a href='<html:rewrite page="/search.jsp" />'>Search</a><br>
-<html:link action="/helloWorld">Hello World </html:link>
+<html:link forward="search">Search</html:link> <br />OR <a href='<html:rewrite page="/search.jsp" />'>Search</a><br>
+<html:link page="/mysearch.do">Search using ForwardAction</html:link><br/>
+
+<html:link action="/helloWorld">Hello World</html:link>
 
 </body>
 </html>
